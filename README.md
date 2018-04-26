@@ -15,3 +15,8 @@ The following environmental variables are required to be set for proper function
 **$SMTP_FWD_USERNAME**=[plaintext username for the above host] 
 
 **$SMTP_FWD_PASSWORD**=[plaintext password for the above host]
+
+#Notes
+Email service sendin to this haraka container must have a hostname configured that can be resolved or else haraka rejects with: 
+
+``550 No MX for your FROM address``
